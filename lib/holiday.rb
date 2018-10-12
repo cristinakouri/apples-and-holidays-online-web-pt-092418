@@ -1,5 +1,21 @@
 require 'pry'
 
+holiday_supplies = {
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+}
+
    def second_supply_for_fourth_of_july(holiday_hash)
     holiday_hash.each do |seasons, holidays|
       holidays.each do |days, characteristics|
@@ -45,7 +61,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
  binding.pry 
 
 end
-add_new_holiday_with_supplies
+add_new_holiday_with_supplies(holiday_supplies, :fall, "CODEDAY", ["computer", "mouse", "coffee"])
 
 def all_winter_holiday_supplies(holiday_hash)
    holiday_hash.each do |season, holiday|
