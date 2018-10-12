@@ -85,6 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize + ":"
       hash.each do |holiday, supply|
         :new_years.to_s.split("_")
+        
       end
   end
 end
