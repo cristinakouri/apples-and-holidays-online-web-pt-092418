@@ -81,11 +81,11 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.each do |season, hash|
-    binding.pry
+   
     puts season.to_s.capitalize + ":"
       hash.each do |holiday, supply|
         :new_years.to_s.split("_").collect {|word| word.capitalize}.join(" ")
-        
+         binding.pry
       end
   end
 end
